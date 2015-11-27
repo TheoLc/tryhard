@@ -22,8 +22,8 @@ echo '<div id="topgame">
     { 
     // on affiche les informations de l'enregistrement en cours 
     	
-    echo '<li class="new"> <b>'.$data['name'].'</b> <br/>'.$data['price']."€".'<br/>';
-    echo '<a href="jeux.php?id='.$data['id'].'"><img class="imgj" height="100" width="250" src="img/'.$data['nickname'].'.jpg"/> </li> </a>'; 
+    echo '<li class="new"> <b>'.$data['name'].'</b> <br/>'.$data['price']."&#8364".'<br/>';
+    echo '<a href="jeux.php?id='.$data['id'].'"><img class="imgj" height="250" width="250" src="img/'.$data['nickname'].'.jpg"/> </li> </a>'; 
    // echo ' <i>date de naissance : '.$data['description'].'</i><br>';
     } 
 

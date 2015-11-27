@@ -12,7 +12,7 @@ $valeur = mysql_fetch_array($res);
 <body>
 <?php
 
-    echo '<b>'.$valeur['name'].'</b> <br/> <p> Prix : '.$valeur['price']."€".'</p>
+    echo '<b>'.$valeur['name'].'</b> <br/> <p> Prix : '.$valeur['price']."&#8364".'</p>
      <p>Editeur : '.$valeur['editor1'].' </p><p>Description : '.$valeur['description'].' </p>
    <img class="imgb" height="300" width="220" src="img/'.$valeur['nickname'].'.jpg"/>'; 
     
