@@ -138,3 +138,8 @@ html {
 .colords a{
     background-color: #CC0000;
 }
+
+img {
+    height: 250px;
+    width: 250px;
+}
