@@ -32,7 +32,6 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
     if (mysql_num_rows($resultat) != 0) {
        
      $_SESSION['login'] = $login;
-     echo "Bienvenue ".$_SESSION['login'];
      header("Location:boutique.php");
       /*session_start();
         $ligne_resultat = mysql_fetch_array($resultat);
@@ -54,10 +53,14 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Try Hard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <div class="hd">
+       
+    </head>
+    <body>
+      <header>
+       <div class="hd">
           <a href="accueil.php"> <img class="logo" src="logo.png"> </a>
           <ul class="menu">
             <li> <a href="accueil.php"> Accueil </a> </li>
@@ -82,10 +85,6 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
                 </form>
         </div>
 </div>
-    </head>
-    <body>
-      <p>
-      
 </header>
     <footer>
       <script type="text/javascript" src=".js"></script>
