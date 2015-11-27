@@ -66,13 +66,13 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
                            ?>
             <li> <a href="#">  Mon compte </a> </li>
             <li> <a href="deco.php">  Déconnection </a> </li>
-             <li> <?php echo "Bienvenue ".$_SESSION['login']; ?>
+             <li> <?php echo "Bienvenue ".$_SESSION['login']; ?> </li>
                         <?php } else {?>
             <li> <a href="connect.php"> Se connecter </a> </li>
             <li> <a href="register.php"> S'inscrire </a> </li>
            <?php }?>
-            <div id="who">
-            <a href="weare.php">  Qui sommes nous ? </a>
+           <div id="who">
+            <a href="weare.php"> Qui sommes nous ? </a>
         </div>
           </ul>
           <div id="searchbar">

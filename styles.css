@@ -16,10 +16,7 @@ html {
     display: inline-block;
 }
 
-#who {
-    float: right;
-}
-
+#who,
 #who a {
     float: right;
 }
