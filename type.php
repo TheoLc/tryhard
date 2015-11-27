@@ -18,7 +18,7 @@ echo '<div id="topgame">
 	</ul>
 </div>';
 
-$search = "SELECT * FROM games WHERE Console1='".$_GET['console']. "'OR Console2='".$_GET['console']."'OR Console3='".$_GET['console']. "'OR Console4='".$_GET['console']. "'OR Console5='".$_GET['console']. "'OR Console6='".$_GET['console']."' ;";
+$search = "SELECT * FROM games WHERE Console1='".$_GET['console']. "'OR Console2='".$_GET['console']."'OR Console3='".$_GET['console']. "'OR Console4='".$_GET['console']. "'OR Console5='".$_GET['console']. "'OR Console6='".$_GET['console']."'ORDER BY name;";
 $resu = mysql_query($search) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error()); 
  while($data = mysql_fetch_assoc($resu)) 
     { 

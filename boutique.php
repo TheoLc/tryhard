@@ -5,7 +5,7 @@
 <title>Boutique</title>
 </head>
 <body>
-<?php $sql = 'SELECT * FROM games';
+<?php $sql = 'SELECT * FROM games ORDER BY name';
 $res = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 echo '<div id="topgame">
 	<ul class="gamelist">
