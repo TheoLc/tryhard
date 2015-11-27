@@ -104,22 +104,19 @@ else {
 // dans les keywords ou le titre
  $query = "SELECT * FROM games
  WHERE name = '".$_POST['Mot']."'
- OR nickname = '".$_POST['Mot']."';";
+ OR nickname = '".$_POST['Mot']. "'OR sort1 = '".$_POST['Mot'].
+ "'OR sort2 = '".$_POST['Mot']."';";
 
  $result = mysql_query($query) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 
  $row = mysql_fetch_row($result);
 
-
-
+ echo '<h3> Resultat pour : '.$_POST['Mot'].'</h3>';
 // Si aucun enregistrement n'est retourné,
 // on affiche un message adéquat
 if ($row == "0") {
  echo "
- <b>Aucun résultat ne correspond à votre recherche
- </b>
-
- ";
+ <b>Aucun résultat ne correspond à votre recherche</b> ";
 
 }
 
@@ -128,7 +125,8 @@ if ($row == "0") {
 else {
  $query = "SELECT * FROM games
  WHERE name = '".$_POST['Mot']."'
- OR nickname = '".$_POST['Mot']."';";
+ OR nickname = '".$_POST['Mot']."'OR sort1 = '".$_POST['Mot'].
+ "'OR sort2 = '".$_POST['Mot']."';";
 
  $result = mysql_query($query) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 
@@ -140,9 +138,7 @@ else {
 
  }
 }
-
 }
-
 // on ferme la base
 mysql_close();
 }
