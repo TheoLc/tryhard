@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Accueil</title>
 </head>
 <body>
 <p>Bonjour !</p>

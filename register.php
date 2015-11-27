@@ -23,6 +23,10 @@ if(isset($_POST['submit2']))
 
 <!DOCTYPE html>
 <html>
+<head>
+<title>Inscription</title>
+</head>
+<body>
 <div id="formu">
 	<form method="post" action="register.php">
 		<p>Nom :</p>
@@ -42,4 +46,5 @@ if(isset($_POST['submit2']))
 		<input type="submit" value="S'inscrire" name="submit2">
 	</form>
 </div>
+</body>
 </html>

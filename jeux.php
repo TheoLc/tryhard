@@ -6,7 +6,10 @@ $valeur = mysql_fetch_array($res);
 ?>
 <!DOCTYPE html>
 <html>
-
+<head>
+<title><?php echo $valeur['name']; ?></title>
+</head>
+<body>
 <?php
 
     echo '<b>'.$valeur['name'].'</b> <br/> <p> Prix : '.$valeur['price']."€".'</p>
@@ -21,4 +24,5 @@ mysql_close();
 
 
 ?>
+</body>
 </html>

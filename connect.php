@@ -4,6 +4,10 @@ include('index.php');
 
 <!DOCTYPE html>
 <html>
+<head>
+<title>Connexion</title>
+</head>
+<body>
 <div id="connect">
 	<div id="formco">
 		<form method="post" action="connect.php">
@@ -20,4 +24,5 @@ include('index.php');
 	</div>
 </div>
 		</form>
+	</body>
 </html>

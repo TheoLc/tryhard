@@ -1,6 +1,10 @@
 <?php include("index.php"); ?>
 <!DOCTYPE html>
 <html>
+<head>
+<title>Boutique</title>
+</head>
+<body>
 <?php $sql = 'SELECT * FROM games';
 $res = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
 echo '<div id="topgame">
@@ -29,3 +33,5 @@ mysql_close();
 
 ?>
 
+</body>
+</html>

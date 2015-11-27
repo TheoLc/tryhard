@@ -53,10 +53,8 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Try Hard</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-       
+        <link rel="stylesheet" type="text/css" href="styles.css">  
     </head>
     <body>
       <header>
