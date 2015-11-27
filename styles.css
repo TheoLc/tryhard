@@ -1,0 +1,143 @@
+html {
+    background-image: url(fond.jpg);
+    color: white;
+    margin: 25px;
+}
+
+.menu {
+    padding: 28px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+#connect {
+    padding-left: 480px;
+    padding-top: 50px;
+    display: inline-block;
+}
+
+#who {
+    float: right;
+}
+
+#who a {
+    float: right;
+}
+
+#searchbar {
+    float: right;
+}
+
+#opt a {
+    padding: 10px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: white;
+}
+
+#opt a:hover,
+#opt a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#formu {
+    padding-left: 480px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.gamelist a {
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gamelist a:hover,
+.gamelist a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.gamelist li {
+    display: inline;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding-top: 20px; 
+}
+
+.new {
+    text-align: center;
+    color: black;
+    border-color: black;
+    display: inline;
+    border-style: ridge;
+    background: grey;
+    width: 200;
+    float: left;
+    margin-right: 50px;
+    margin-bottom:20;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.new:hover,
+.new:focus {
+    color: white;
+}
+
+.imgj {
+    float: left;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.colorpc a{
+    background-color: white;
+}
+
+.colorps a {
+    background-color: #3366CC;
+}
+
+.colorone a{
+    background-color: #339900;
+}
+
+.colorvita a{
+    background-color: #3366CC;
+}
+
+.colorwii a{
+    background-color: #660099;
+}
+
+.colords a{
+    background-color: #CC0000;
+}
