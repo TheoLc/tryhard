@@ -49,7 +49,10 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
     }
 }
 
-?>
+
+
+
+  ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -77,13 +80,73 @@ if (isset($_POST['submit'])) { // execution uniquement apres envoi du formulaire
         </div>
           </ul>
           <div id="searchbar">
-            <form action="" class="formulaire">
-            <input class="champ" type="text" value="Recherche"/><br />
-            <input class="bouton" type="button" value="Rechercher" />
+            <form method="post" action="index.php" class="formulaire">
+            <input class="champ" type="text" name="Mot" placeholder="Recherche"/><br />
+            <input class="bouton" type="submit" value="Rechercher" name="submit3"/>
                 </form>
         </div>
 </div>
 </header>
+<?php   if (isset($_POST['submit3'])) {
+        if (($_POST['Mot'] == "")||($_POST['Mot'] == "%")) {
+// Si aucun mot clé n'a été saisi,
+// le script demande à l'utilisateur
+// de bien vouloir préciser un mot clé
+
+ echo "
+ Veuillez entrer un mot clé s'il vous plaît!
+ <p>";
+
+}
+
+else {
+// On selectionne les enregistrements contenant le mot clé
+// dans les keywords ou le titre
+ $query = "SELECT * FROM games
+ WHERE name = '".$_POST['Mot']."'
+ OR nickname = '".$_POST['Mot']."';";
+
+ $result = mysql_query($query) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+
+ $row = mysql_fetch_row($result);
+
+
+
+// Si aucun enregistrement n'est retourné,
+// on affiche un message adéquat
+if ($row == "0") {
+ echo "
+ <b>Aucun résultat ne correspond à votre recherche
+ </b>
+
+ ";
+
+}
+
+// Sinon, on affiche le nombre d'enregistrements correspondant
+// et les résultats eux-mêmes
+else {
+ $query = "SELECT * FROM games
+ WHERE name = '".$_POST['Mot']."'
+ OR nickname = '".$_POST['Mot']."';";
+
+ $result = mysql_query($query) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+
+ while($row = mysql_fetch_row($result))
+ {
+  echo " <p><b>$row[1]</b>\n<br><a href=jeux.php?id=$row[0]>Visualiser l'article</a>\n
+  <p>\n
+  ";
+
+ }
+}
+
+}
+
+// on ferme la base
+mysql_close();
+}
+ ?>
     <footer>
       <script type="text/javascript" src=".js"></script>
     </footer>
