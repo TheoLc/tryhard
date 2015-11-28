@@ -14,22 +14,18 @@
 </head>
 
 <body>
-<?php $sql = 'SELECT * FROM games';
-$res = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
-	$row = mysql_fetch_row($res);
-	echo '<ul class="diaporama">
-			<li><a href="jeux.php?id='.$row[0].'"><img src="img/COD.jpg" alt="Image 1" /></a></li>
-			<li><a href="jeux.php?id='.$row[0].'"><img src="img/FIFA.jpg" alt="Image 2" /></a></li>
-			<li><img src="img/ACS.jpg" alt="Image 3" /></li>
-			<li><img src="img/WOW.jpg" alt="Image 4" /></li>
-			<li><img src="img/BF4.jpg" alt="Image 5" /></li>
-			<li><img src="img/JC3.jpg" alt="Image 6" /></li>
-			<li><img src="img/JW.jpg" alt="Image 7" /></li>
-			<li><img src="img/mario.jpg" alt="Image 8" /></li>
-			<li><img src="img/MK.jpg" alt="Image 9" /></li>
-			<li><img src="img/NFS.jpg" alt="Image 10" /></li>
-			<li><img src="img/Starcraft.jpg" alt="Image 11" /></li>
-	</ul>';
-	?>
+<ul class="diaporama">
+			<li><a href="jeux.php?id=1"><img src="img/COD.jpg" alt="Image 1" /></a></li>
+			<li><a href="jeux.php?id=2"><img src="img/FIFA.jpg" alt="Image 2" /></a></li>
+			<li><a href="jeux.php?id=6"><img src="img/ACS.jpg" alt="Image 3" /></a></li>
+			<li><a href="jeux.php?id=3"><img src="img/WOW.jpg" alt="Image 4" /></a></li>
+			<li><a href="jeux.php?id=5"><img src="img/BF4.jpg" alt="Image 5" /></a></li>
+			<li><a href="jeux.php?id=10"><img src="img/JC3.jpg" alt="Image 6" /></a></li>
+			<li><a href="jeux.php?id=12"><img src="img/JW.jpg" alt="Image 7" /></a></li>
+			<li><a href="jeux.php?id=11"><img src="img/mario.jpg" alt="Image 8" /></a></li>
+			<li><a href="jeux.php?id=9"><img src="img/MK.jpg" alt="Image 9" /></a></li>
+			<li><a href="jeux.php?id=7"><img src="img/NFS.jpg" alt="Image 10" /></a></li>
+			<li><a href="jeux.php?id=8"><img src="img/Starcraft.jpg" alt="Image 11" /></a></li>
+	</ul>
 </body>
 </html>
