@@ -1,5 +1,10 @@
 <?php
 include("index.php");
+
+$account = "SELECT * FROM clients;";
+$resul = mysql_query($account) or die('Erreur SQL !<br>'.$account.'<br>'.mysql_error()); 
+$i = 0;
+$j = 0;
 if(isset($_POST['submit2']))
 {
 	$userfirstname=htmlentities(trim($_POST['nom']));
@@ -7,17 +12,40 @@ if(isset($_POST['submit2']))
 	$useradress=htmlentities(trim($_POST['adresse']));
 	$useremail=htmlentities(trim($_POST['email']));
 	$userlogin=htmlentities(trim($_POST['login']));
-	$userpasswd=htmlentities(trim($_POST['passwd']));
-	$confpasswd=htmlentities(trim($_POST['confirm']));
-	if($userfirstname && $username && $useradress && $useremail && $userlogin && $userpasswd && $confpasswd)
+	$userpasswd=md5(htmlentities(trim($_POST['passwd'])));
+	$confpasswd=md5(htmlentities(trim($_POST['confirm'])));
+	while ($row1 = mysql_fetch_row($resul))
 	{
-		if($userpasswd==$confpasswd)
+		if($userlogin == $row1[3])
 		{
-				mysql_select_db('clients');
-			$query = mysql_query("INSERT INTO clients (nom, prenom, login, passwd, adresse, email) VALUES('$userfirstname','$username','$userlogin','$userpasswd','$useradress','$useremail')");
-			die("Insciption terminée <a href='connect.php'>Connectez vous</a>");
+			$i += 1;
+		}
+		else if ($useremail == $row1[6])
+		{
+			$j += 1;
 		}
 	}
+	if (($i == 0) && ($j == 0))
+	{
+		if($userfirstname && $username && $useradress && $useremail && $userlogin && $userpasswd && $confpasswd)
+		{
+			if($userpasswd==$confpasswd)
+			{
+				mysql_select_db('clients');
+				$query = mysql_query("INSERT INTO clients (nom, prenom, login, passwd, adresse, email) VALUES('$userfirstname','$username','$userlogin','$userpasswd','$useradress','$useremail')");
+				die("Insciption terminée <a href='connect.php'>Connectez vous</a>");
+			}
+			else
+			{
+				echo "Erreur lors de l'inscription";
+
+			}
+		}
+	}
+	else if ($i > 0)
+		echo "Ce login est déjà pris";
+	else
+		echo "Cet email est déjà pris";
 }
 ?>
 

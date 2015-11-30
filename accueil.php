@@ -25,7 +25,14 @@
 			<li><a href="jeux.php?id=11"><img src="img/mario.jpg" alt="Image 8" /></a></li>
 			<li><a href="jeux.php?id=9"><img src="img/MK.jpg" alt="Image 9" /></a></li>
 			<li><a href="jeux.php?id=7"><img src="img/NFS.jpg" alt="Image 10" /></a></li>
-			<li><a href="jeux.php?id=8"><img src="img/Starcraft.jpg" alt="Image 11" /></a></li>
+			<li><a href="jeux.php?id=8"><img src="img/TR.jpg" alt="Image 11" /></a></li>
+			<li><a href="jeux.php?id=15"><img src="img/Bat.jpg" alt="Image 12" /></a></li>
+			<li><a href="jeux.php?id=16"><img src="img/MGS.jpg" alt="Image 13" /></a></li>
+			<li><a href="jeux.php?id=17"><img src="img/NBA.jpg" alt="Image 14" /></a></li>
+			<li><a href="jeux.php?id=18"><img src="img/WWE.jpg" alt="Image 15" /></a></li>
+			<li><a href="jeux.php?id=13"><img src="img/TCRS.jpg" alt="Image 16" /></a></li>
+			<li><a href="jeux.php?id=14"><img src="img/SP.jpg" alt="Image 17" /></a></li>
+			<li><a href="jeux.php?id=4"><img src="img/GTA.jpg" alt="Image 18" /></a></li>
 	</ul>
 </body>
 </html>

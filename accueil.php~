@@ -1,0 +1,10 @@
+<?php include("index.html"); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<p>TAMERE</p>
+</body>
+</html>

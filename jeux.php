@@ -15,9 +15,8 @@ $valeur = mysql_fetch_array($res);
     echo '<b>'.$valeur['name'].'</b> <br/> <p> Prix : '.$valeur['price']."&#8364".'</p>
      <p>Editeur : '.$valeur['editor1'].' </p><p>Description : '.$valeur['description'].' </p>
    <img class="imgb" height="300" width="220" src="img/'.$valeur['nickname'].'.jpg"/>'; 
-    
-   // echo ' <i>date de naissance : '.$data['description'].'</i><br>';
-    
+   echo '<form method="post" action="addpanier.php?id='.$_GET['id'].'">
+   <a  href="addpanier.php?id='.$_GET['id'].'"><input class="bouton17" type="submit" name="submit4" value="" /></a></form>'; 
 
 // on ferme la connexion à mysql 
 mysql_close(); 

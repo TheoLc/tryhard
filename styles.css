@@ -2,6 +2,7 @@ html {
     background-image: url(fond.jpg);
     color: white;
     margin: 25px;
+    font-family: Helvetica;
 }
 
 .menu {
@@ -139,7 +140,33 @@ html {
     background-color: #CC0000;
 }
 
+
+
+.bouton17 {
+    margin-left: 40px;
+    width:40px;
+    height:38px;
+    border-radius:50%;
+    color:#555;
+    background-image: url(img/panier.gif);
+}
+
+.flo {
+    float: left;
+    margin-left: 20px;
+    text-align: right;
+}
+
 img {
-    height: 250px;
     width: 250px;
+    height: 250px;
+}
+.bouton18 { float: left;
+    margin-left: 10px;
+    margin-right: 30px;
+    width:40px;
+    height:38px;
+    border-radius:50%;
+    color:#555;
+    background-image: url(img/croix.png);
 }
