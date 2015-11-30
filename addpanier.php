@@ -64,7 +64,7 @@ while($data = mysql_fetch_assoc($resu))
     	    	echo "<p>$i article</p>";
     	    else
     	    	echo "<p>$i articles</p>";
-            if ($prix <= 200) 
+            if ($prix >= 200) 
                   	echo "<p>Prix = $prix&#8364</p>";
             else
             {

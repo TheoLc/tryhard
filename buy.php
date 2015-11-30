@@ -13,7 +13,8 @@ $account = "SELECT * FROM clients WHERE login='".$_SESSION['login']."';";
 $resul = mysql_query($account) or die('Erreur SQL !<br>'.$account.'<br>'.mysql_error()); 
 $row1 = mysql_fetch_row($resul);
 echo "<p>Merci de votre achat de ".$_POST['prix']."&#8364.</p>";
-echo "Vos articles vous seront livrés entre 2 et 3 jours à l'adresse : ".$row1[5].".";
+echo "<p>Vos articles vous seront livrés entre 2 et 3 jours à l'adresse : ".$row1[5].".</p>";
+echo "Préparez votre carte bleu à l'arrivée du livreur.";
 
 $acc = "SELECT * FROM articles WHERE idc='".$row1[0]."';";
 $result = mysql_query($acc) or die('Erreur SQL !<br>'.$acc.'<br>'.mysql_error()); 
