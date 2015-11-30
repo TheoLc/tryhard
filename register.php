@@ -37,7 +37,7 @@ if(isset($_POST['submit2']))
 			}
 			else
 			{
-				echo "Erreur lors de l'inscription";
+				echo "Les mots de passes ne sont pas identiques.";
 
 			}
 		}
